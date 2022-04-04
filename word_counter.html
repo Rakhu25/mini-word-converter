@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <title>word counter</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Word & Letter counter</h1>
+       <div> <textarea id="inputText" placeholder="Write something here..."></textarea></div>
+       <div class="buttons">
+             <button id="upper-btn" ><span>UPPER CASE</span></button>
+             <!-- onClick='convertUpperCase(inputText.value)' this is another way-->
+             <button id="lower-btn"><span>lowercase</span></button>
+             <button id="italic-btn"><span>Italic Text</span></button>
+             <button id="bold-btn"><span>bold Text</span></button>
+             <button id="underLine-btn"><span>underLine</span></button>
+             <button id="linethrough"><span>linethrough</span></button>
+             <button id="copy-btn"><span>Copy Text</span></button>
+             <button id="remove-space-btn"><span>RemoveExtraSpace</span></button>
+      </div>
+
+         <div class="count-display"><h2 id="word">word count :0 </h2>
+            <h2 id="letter">letter count:0</h2>
+          </div>
+   
+          <div>
+            <p id="preview"><h2>Preview here....</h2> </p>
+          </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
