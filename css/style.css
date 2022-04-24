@@ -36,25 +36,4 @@ max-width: 100%;
 padding: 3px 20px 0 20px;
 text-decoration: none;
 user-select: none;
-touch-action: manipulation;
-}
-
-button span {
-transition: all 200ms;
-}
-
-button:hover span {
-transform: scale(.9);
-opacity: .75;
-}
-
-@media screen and (max-width: 991px) {
-button {
-font-size: 15px;
-height: 50px;
-}
-
-button span {
-line-height: 50px;
-}
 }
