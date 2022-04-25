@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>mini word testing</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="container-pro">
+    <div class="flex-container">
+        
+        <div class="one">
+            <div> <h4>Font</h4> </div>
+           <div class="selects">
+            <select id="font-select" onChange="update()">
+                <option value="0">'Bitter', serif</option>
+                <option  value="1">'Kaushan Script', cursive</option>
+                <option  value="2">'Nunito Sans', sans-serif</option>
+                <option  value="3">'Poppins', sans-serif</option>
+                <option  value="4">'Roboto', sans-serif</option>
+                <option  value="5">'Rubik Wet Paint', cursive</option>
+                <option value="6">green</option>
+                <option value="7">red</option>
+            </select>
+            <select id="font-size" onChange="update()">
+                <option value="40">40</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27"</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option  value="31">31</option>
+                <option  value="31">31</option>
+                <option  value="32">32</option>
+                <option  value="33">33</option>
+                <option  value="34">34</option>
+                <option  value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+            </select>
+           </div>
+          
+         
+        </div>
+
+        <div class="two">
+            <div>
+                <h4>Font-Buttons</i></h4>   
+            </div>
+            <div class="font-buttons all-buttons">
+                <button><span>ABC</span></button>
+                <button><span>abc</span></button>
+                <button><span style="text-decoration: line-through;">Abc</span></button>
+                <button><span>B</span></button>
+                <button><span><i>I</i></span></button>
+                <button><span><u>U</u></span></button>
+                <button><span><i class="fa-solid fa-copy"></i></span></button><br>
+               </div> 
+        </div>
+
+        <div class="third">
+        <div><h4>Paragraph</h4></div>  
+        <div class="align">
+           <button class="align-center"><i class="fa-solid fa-align-center"></i></button>
+           <button class="align-justify"><i class="fa-solid fa-align-justify"></i></button>
+           <button class="align-left"><i class="fa-solid fa-align-left"></i></button>
+           <button class="align-right"><i class="fa-solid fa-align-right"></i></button> 
+        </div>  
+        </div>
+
+       
+        
+        <div class="four">
+            <div>
+                <h4>color  <i class="fa-solid fa-palette"></i></h4>   
+            </div>
+            <input type="color" id="color" onChange="update()">
+        </div>
+          <!-- <button  class="remove-space-button spc-buttons"><span>Word Cout here:0</span> </button> -->
+            <p class="autoUp">Word Count Here:0..</p>
+             <button  class="remove-space-button spc-buttons"><span>RemoveExtraSpace</span></button>
+            <!-- <button  class="remove-space-button spc-buttons"><span>Letter Count:0</span></button>
+             -->
+             <p class="autoUp">Letter Count Here:0..</p>
+       
+        </div>
+     
+          </div>
+        <div class="main">
+        <h1>Mini Word Editor</h1>
+       <div> <textarea id="inputText" placeholder="Write something here..." onkeyup="getInputText()"></textarea></div>
+    <h2>preview here...</h2>  
+    <div id="preview"></div> 
+    </div>
+
+    <script src="js/app2.js"> </script>
+</body>
+</html>
