@@ -3,7 +3,10 @@ let input = document.querySelector('#inputText');
 let forWordCount = document.querySelector('.word_count');
 let forLetterCount = document.querySelector('.letter_count');
 let copyBtn = document.querySelector('.copy');
+let boldBtn = document.querySelector('.bold');
+let italicBtn = document.querySelector('.italic');
 let allAlign = document.querySelector('.align');
+
 
 //all EventListener is here
 allAlign.addEventListener('click',textAlign);
@@ -11,6 +14,8 @@ input.addEventListener('keyup',function(e){
     wordAndLetterCounter();
 })
 copyBtn.addEventListener('click',copyText);
+boldBtn.addEventListener('click',convertBold);
+italicBtn.addEventListener('click',convertItalic);
 
 function getInputText(){
     preview.innerHTML=input.value;
@@ -88,4 +93,12 @@ function wordAndLetterCounter(){
 function copyText(){
    input.select();
    navigator.clipboard.writeText(input.value);
+}
+//function add for convert text into bold
+function convertBold(){
+   // input.value = input.value.bold();
+   preview.innerHTML = input.value.bold();
+}
+function convertItalic(){
+   preview.innerHTML = `<i> ${input.value} </i>`;
 }
