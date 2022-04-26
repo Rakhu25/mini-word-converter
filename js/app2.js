@@ -2,7 +2,7 @@ let preview = document.querySelector('#preview');
 let input = document.querySelector('#inputText');
 let forWordCount = document.querySelector('.word_count');
 let forLetterCount = document.querySelector('.letter_count');
-
+let copyBtn = document.querySelector('.copy');
 let allAlign = document.querySelector('.align');
 
 //all EventListener is here
@@ -10,6 +10,7 @@ allAlign.addEventListener('click',textAlign);
 input.addEventListener('keyup',function(e){
     wordAndLetterCounter();
 })
+copyBtn.addEventListener('click',copyText);
 
 function getInputText(){
     preview.innerHTML=input.value;
@@ -82,4 +83,9 @@ function wordAndLetterCounter(){
   forLetterCount.innerHTML = `Letter Count Here:${letterCount}..`
   console.log("word count" + wordCount);
   console.log("letter count" + letterCount);
+}
+//function for copy text
+function copyText(){
+   input.select();
+   navigator.clipboard.writeText(input.value);
 }
